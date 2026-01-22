@@ -4,15 +4,7 @@ shortTitle: Error handling
 description: >-
   Improve app robustness by handling errors.
   Learn about exceptions, errors, `try/catch`, `throw`, and `rethrow`.
-sitemap: false
-noindex: true
 layout: learn
-prevpage:
-  url: /learn/tutorial/object-oriented
-  title: Define relationships with classes
-nextpage:
-  url: /learn/tutorial/advanced-oop
-  title: Extend your app with enums and extensions
 ---
 
 In this chapter, you'll learn how to

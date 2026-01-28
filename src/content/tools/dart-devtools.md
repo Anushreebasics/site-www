@@ -93,25 +93,24 @@ displaying information about the target app.
 Click **Debugger** to start debugging the app.
 
 
-## Using DevTools with VS Code debug configurations
+## VS Code debug configurations
 
-You can configure VS Code to launch Dart command-line apps with DevTools enabled,
-allowing access to additional features like the Timeline view (timeline events).
+Configure VS Code to launch Dart command-line apps with DevTools enabled to access features like the Timeline view.
 
 ### Debug configurations in VS Code
 
-The following table shows example VS Code debug configurations for Dart apps:
+The following table shows examples of VS Code debug configurations for Dart apps:
 
 | Configuration | `vmAdditionalArgs` | Description |
 |---------------|---------------------|-------------|
-| Default VS Code debug | `[]` | Standard debugging with VM service enabled (debugger and logging work, but no timeline data). |
+| Default VS Code debug | `[]` | Standard debugging. Includes debugger and logging; excludes timeline data. |
 | With timeline streams | `["--timeline_streams=VM,Isolate,GC"]` | Enables timeline streams for timeline, memory, and performance profiling. |
 
 {:.table .table-striped}
 
 ### Example launch.json
 
-To enable timeline events, add the following to your `.vscode/launch.json`:
+To enable timeline events, add this configuration to your `.vscode/launch.json`:
 
 ```json
 {
@@ -132,7 +131,7 @@ To enable timeline events, add the following to your `.vscode/launch.json`:
 
 Replace `"main.dart"` with the path to your app's main file.
 
-### Connecting DevTools
+### Connect DevTools
 
 1. Start debugging in VS Code using the configured launch configuration.
 
@@ -143,7 +142,7 @@ Replace `"main.dart"` with the path to your app's main file.
 
 3. Copy the DevTools URL and paste it into a Chrome browser window.
 
-4. In DevTools, you can now access the timeline, memory, and performance views for your running app.
+4. In DevTools, view the timeline, memory, and performance for your running app.
 
 ## Using DevTools with a Flutter app
 
